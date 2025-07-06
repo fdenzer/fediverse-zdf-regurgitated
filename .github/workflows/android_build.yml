@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Set up Gradle
-      uses: actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v3 # Corrected this line
       # Gradle wrapper is not present, so this action will use the specified version or a default.
       # AGP 8.2 typically works with Gradle 8.0+. The action's default should be suitable.
 
